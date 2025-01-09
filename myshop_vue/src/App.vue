@@ -23,7 +23,7 @@
                           <router-link to="/log-in" class="button is-light">Логин</router-link>
                           <router-link to="/cart" class="button is-succes">
                               <span class="icon"><i class="fas fa-shopping-cart"></i></span>
-                              <span>Корзина</span>
+                              <span>Корзина({{ cartTotalLength }})</span>
                           </router-link>
                       </div>
                   </div>
@@ -37,9 +37,7 @@
 
       <footer class="footer">
           <p class="has-text-centered">Copyright (c) 2024</p>
-      </footer>
-      
-      <router-view/>
+      </footer> 
   </div>
 </template>
 
@@ -48,6 +46,24 @@ export default {
   data() {
     return {
       showMobileMenu: false,
+      cart: {
+        items: []
+      }
+    }
+  },
+  beforeCreate() {
+    this.$store.commit('initializeStore')
+  },
+  mounted() {
+    this.cart = this.$store.state.cart
+  },
+  computed: {
+    cartTotalLength() {
+        let totalLength = 0
+        for (let i=0; i< this.cart.items.length; i++){
+            totalLength += this.cart.items[i].quantity
+        }
+        return totalLength
     }
   }
 }

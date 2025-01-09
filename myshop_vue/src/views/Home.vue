@@ -14,7 +14,7 @@
           <div class="column is-3" v-for="product in latestProducts"
                                   v-bind:key="product.id">
               <div class="box">
-                  <figure class="image mm-4">
+                  <figure class="image mb-4">
                       <img :src="product.get_thumbnail">
                   </figure>
                   <h3 class="is-size-4">{{ product.name }}</h3>
