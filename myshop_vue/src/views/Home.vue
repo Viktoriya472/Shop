@@ -21,7 +21,7 @@
 
 <script>
 import axios from 'axios'
-import ProductBox from '@/components/ProductBox';
+import ProductBox from '@/components/ProductBox'
 
 export default {
   name: 'Home',
@@ -40,7 +40,7 @@ export default {
   methods: {
     async getLatestProducts() {
         this.$store.commit('setIsLoading', true)
-    await axios
+        await axios
         .get('/api/v1/latest-products/')
         .then(response => {
             this.latestProducts = response.data
@@ -48,7 +48,7 @@ export default {
         .catch(error => {
             console.log(error)
         })
-    this.$store.commit('setIsLoading', false)
+        this.$store.commit('setIsLoading', false)
     }
   }
 }

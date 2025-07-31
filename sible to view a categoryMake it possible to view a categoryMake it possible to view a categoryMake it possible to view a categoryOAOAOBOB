@@ -1,0 +1,29 @@
+[33mcommit 06b76ca77d8eb82662bbb60c60c2226c64c7b05a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Viktoriya Musikhina <musihina47225@mail.ru>
+Date:   Mon Jan 13 22:04:35 2025 +0300
+
+    Make it possible to view a category
+
+[33mcommit 41bb61b8c017b4e152e82bf353fa2c09b218ab53[m
+Author: Viktoriya Musikhina <musihina47225@mail.ru>
+Date:   Thu Jan 9 22:17:41 2025 +0300
+
+    Implemented the ability to add products to cart
+
+[33mcommit 6a04b415280c3d58d7d76f81fefca4de4f763a00[m
+Author: Viktoriya Musikhina <musihina47225@mail.ru>
+Date:   Mon Aug 12 18:29:11 2024 +0300
+
+    Create app product. Create models, serializer and views
+
+[33mcommit 198c2be6890bd145828dca95fc7b07b2e49a92ad[m
+Author: Viktoriya Musikhina <musihina47225@mail.ru>
+Date:   Thu Aug 8 18:25:05 2024 +0300
+
+    vue.js setup
+
+[33mcommit ca5d1f6c1bcffa9cd218a856a43cd4eee9acfbb7[m
+Author: Viktoriya Musikhina <musihina47225@mail.ru>
+Date:   Mon Aug 5 20:38:22 2024 +0300
+
+    Create project

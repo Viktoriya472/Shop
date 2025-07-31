@@ -12,8 +12,28 @@
                   <span aria-hidden="true"></span>
               </a>
           </div>
-          <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
-              <div class="navbar-end">
+          <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu }">
+            <div class="navbar-start">
+              <div class="navbar-item">
+                <form method="get" action="/search">
+                  <div class="field has-addons">
+                    <div class="control">
+                      <input type="search" class="input" placeholder="What are you looking for?" name="query">
+                    </div>
+
+                    <div class="control">
+                      <button class="button is-success">
+                          <span class="icon">
+                          <i class="fas fa-search"></i>
+                          </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="navbar-end">
                   <router-link class="navbar-item" to="/summer">Лето</router-link>
                   <router-link class="navbar-item" to="/spring">Весна</router-link>
                   <router-link class="navbar-item" to="/winter">Зима</router-link>
